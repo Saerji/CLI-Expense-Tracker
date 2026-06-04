@@ -4,7 +4,7 @@ from datetime import datetime
 
 def addExpense():
     now = datetime.now() #get the time in runtime
-    monthNow = now.strftime("%B %Y") #extract the month in datetime
+    monthNow = now.strftime("%B") #extract the month in datetime
     expenses = loadExpense() #load the entire file, if doesnt exist, make expenses a list instead
     
     desc = input("Add Expense Description: ")
